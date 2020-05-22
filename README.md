@@ -4,7 +4,7 @@
 
 Copy and paste the following command in your Raspberry Pi console:
 
-     curl -L https://raw.githubusercontent.com/aikoncwd/rpi-benchmark/master/rpi-benchmark.sh | sudo bash
+     curl -L https://raw.githubusercontent.com/LowSkillDeveloper/rpi-benchmark/master/rpi-benchmark.sh | sudo bash
 
 
 ## Information
@@ -28,7 +28,7 @@ Rpi-benchmark script will show your current hardware (overclock) settings. After
 You don't need to download any program, compile sources, etc... It's so easy!  
 Just copy and paste the following command in your Raspberry Pi console:
 
-     curl -L https://raw.githubusercontent.com/aikoncwd/rpi-benchmark/master/rpi-benchmark.sh | sudo bash
+     curl -L https://raw.githubusercontent.com/LowSkillDeveloper/rpi-benchmark/master/rpi-benchmark.sh | sudo bash
 
 The rpi-benchmark script will start in 2 seconds :relaxed:
 <br>
