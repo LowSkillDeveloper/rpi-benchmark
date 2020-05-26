@@ -43,6 +43,22 @@ If you use your RPi as a MediaCenter with Kodi or to play games with RetroPie, y
 I strongly recommend to use some cooling on your RPi to avoid CPU throttling (at 85ºC)
 <br>
 <br>
+##### Raspberry Pi Zero (W): Overclock settings
+
+Edit your `/boot/config.txt` file and paste the following code, you can adjust values to get more or less overclock:
+
+    arm_freq=1050                        # Frequency of ARM processor core in MHz (default 1200)
+    over_voltage=7                       # ARM/GPU voltage adjust, values over 6 voids warranty (default 0)
+    
+    sdram_freq=500                       # Frequency of SDRAM in MHz (default 450)
+    sdram_over_voltage=2
+    
+    temp_limit=70                        # Overheat protection. Disable overclock if SoC reaches this temp
+    
+    dtparam=sd_overclock=90              # Overclock Card Reader (83 max)
+    boot_delay=5                         # Wait for sd
+    #dtoverlay=sdhost,overclock_50=100   # Overclock Card Reader more then 83
+<br>
 ##### Raspberry Pi 3: Overclock settings
 
 Edit your `/boot/config.txt` file and paste the following code, you can adjust values to get more or less overclock:
@@ -74,6 +90,7 @@ Edit your `/boot/config.txt` file and paste the following code, you can adjust v
     
     start_x=1                       #Enable software decoding (MPEG-2, VC-1, VP6, VP8, Theora, etc)
     overscan_scale=1                #Respect the overscan settings with the use of an LCD display
+
 <br>
 ##### Raspberry Pi 2: Overclock settings
 
