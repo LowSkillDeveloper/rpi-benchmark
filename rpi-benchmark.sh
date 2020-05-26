@@ -4,6 +4,7 @@
 
 # Install dependencies
 if [ ! `which hdparm` ]; then
+  apt update
   apt-get install -y hdparm
 fi
 if [ ! `which sysbench` ]; then
